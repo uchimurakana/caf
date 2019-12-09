@@ -1,0 +1,17 @@
+#home.big-bg
+  %header.page-header.wrapper
+    %h1
+      %a{:href => "index.html"}
+        %img.logo{:src => "images/logo.cat.png"}/
+    %nav
+      %ul.main-nav
+        %li 
+          = link_to "news", homes_path
+        %li
+          %a{:href => "charge.html"} 料金表
+        %li
+          %a{:href => "inquriy/index.html"} お問い合わせ
+  .home-content.wrapper
+    %h2.page-title Cat Cafe Kura
+    %p 猫好きな、あなたに極上の癒しを与えます
+    = link_to '入る', homes_path,{ :class =>"button"}
