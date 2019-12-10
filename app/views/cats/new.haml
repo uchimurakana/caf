@@ -1,0 +1,15 @@
+.cat-post
+  .cat-post__box
+    猫の情報を入力
+  = form_tag('/cats', method: :post) do
+    .cat-post__name
+      %input#name{name: "name", placeholder: "猫の名前", type: "text"}/
+    .cat-post__sex
+      %input#sex{name: "sex", placeholder: "猫の性別", type: "text"}/
+    .cat-post__type
+      %input#type{name: "type", placeholder: "猫の種類", type: "text"}/
+    .cat-post__comment
+      %textarea#comment{name: "comment", placeholder: "ここには自由にコメントを記入してください"}
+      %input{type:"file",name: ""}
+    .cat-post__button
+      %input{type:"submit", value:"投稿する"}
