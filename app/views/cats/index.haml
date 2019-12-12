@@ -16,14 +16,13 @@
       %h2.page-title cat
     .cat-contents.wrapper
       .list
-        .cat-image
-          %img{alt: "", src: "images/image1.jpg"}/
-          .cat-text
-            .cat__name
-              名前
-            .cat__gender
-              オス
-            .cat__type
-              サイベリアン
-            .cat__birthday
-              誕生日
+        - @cats.each do |cat|
+          .cat-image
+            %img{alt: "", src: "images/image1.jpg"}/
+            .cat-text
+              .cat__name
+                = cat.name
+              .cat__gender
+                = cat.sex
+              .cat__type
+                = cat.kind

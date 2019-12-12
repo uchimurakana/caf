@@ -1,6 +1,6 @@
 class CatsController < ApplicationController
   def index
-    @homes = Home.limit(15).order("created_at DESC")
+    @cats = Cat.all
   end
   def new
   end
@@ -9,6 +9,6 @@ class CatsController < ApplicationController
   end
   private
   def cat_params
-    params.permit(:comment, :title,:pohoto)
+    params.permit(:name, :sex,:image,:kind,:comment )
   end
 end
