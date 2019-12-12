@@ -5,7 +5,7 @@ class HomesController < ApplicationController
   def new
   end
   def create
-    Home.create(home_params)
+    Home.create!(home_params)
   end
   private
   def home_params
