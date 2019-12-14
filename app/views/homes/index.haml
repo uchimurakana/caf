@@ -11,15 +11,7 @@
     %header.page-header.wrapper
       %h1
         %a{:href => "index.html"}
-          %img.logo{:src => "/images/logo.cat.png"}/
-      %nav
-        %ul.main-nav
-          %li
-            %a{:href => "new.html"} news
-          %li
-            %a{:href => "charge.html"} 料金表
-          %li
-            %a{:href => "contact.html"} お問い合わせ
+          %img.logo{:src => "/images/logo.cat.png"}
     .wrapper
       %h2.page-title news
   .new-contents.wrapper
@@ -43,14 +35,14 @@
         %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.635994190237!2d135.49901442949655!3d34.66389468053969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e77b5c66fb11%3A0xc9e3af357945c49!2zVEVDSDo6RVhQRVJUIOOBquOCk-OBsOOCueOCq-OCpOOCquagoQ!5e0!3m2!1sja!2sjp!4v1573181675823!5m2!1sja!2sjp", :style => "border:0;", :width => "600"}
     %aside
       %ul.sind
-        %li
-          %a{:href => "charge.html"} 料金・システム案内
+        -# %li
+        -#   %a{:href => "charge.html"} 料金・システム案内
         %li
           =link_to '猫ちゃん紹介', cats_path
-        %li
-          %a{:href => "akusesu.html"} アクセス
-        %li
-          %a{:href => "contact.html"} お問い合わせ
+        -# %li
+        -#   %a{:href => "akusesu.html"} アクセス
+        -# %li
+        -#   %a{:href => "contact.html"} お問い合わせ
   %footer
     .wrapper
       %p

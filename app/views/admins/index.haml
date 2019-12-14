@@ -4,10 +4,11 @@
     - if user_signed_in?
       .user_nav.grid-6
         = link_to "ログアウト", destroy_user_session_path, method: :delete
-      .user
-        = link_to'猫のプロフィールを投稿する',new_cat_path
-      .user
-        = link_to'お知らせを投稿する',new_home_path
+      .cat
+        .cat__profile
+          = link_to'猫のプロフィールを投稿する',new_cat_path
+        .cat__notice
+          = link_to'お知らせを投稿する',new_home_path
     - else
       .grid-6
         = link_to "ログイン", new_user_session_path, class: 'post'
