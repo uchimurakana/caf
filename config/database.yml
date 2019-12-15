@@ -50,6 +50,6 @@ test:
 production:
   <<: *default
   database: caf_production
-  username: caf
-  password: <%= ENV['CAF_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
